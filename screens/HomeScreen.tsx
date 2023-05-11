@@ -22,8 +22,13 @@ const HomeScreen = () => {
           PRO/UPGRADE
         </Text>
       </TouchableOpacity>
-
-      <Text>Hello World</Text>
+      {/* Image */}
+      <Image
+        source={{
+          uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Headphones_icon.svg/472px-Headphones_icon.svg.png?20120312011037',
+        }}
+        className="w-full h-64 "
+      />
     </SafeAreaView>
   );
 };
