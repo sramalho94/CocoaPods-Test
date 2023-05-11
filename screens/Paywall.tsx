@@ -31,6 +31,33 @@ const Paywall = () => {
           onPress={navigation.goBack}
         />
       </TouchableOpacity>
+      {/* Content */}
+      <View>
+        <View className="flex-row space-x-10 items-center">
+          <Icon name="md-key" size={32} color="#E5962D" />
+          <View className="flex-1">
+            <Text className="text-white font-bold text-lg">
+              Access to all pro features
+            </Text>
+            <Text className="text-white text-sm font-extralight ">
+              Upgrade to the premium version of the app and enjoy all the
+              exclusive features available only to pro users.
+            </Text>
+          </View>
+        </View>
+        <View className="flex-row space-x-10 items-center">
+          <Icon name="md-person-add-outline" size={32} color="#E5962D" />
+          <View className="flex-1">
+            <Text className="text-white font-bold text-lg">
+              Helpline 24/7 to Personal Trainers
+            </Text>
+            <Text className="text-white text-sm font-extralight">
+              Get unlimited access to our fitness support team and get help
+              anytime you need it - day or night.
+            </Text>
+          </View>
+        </View>
+      </View>
     </ScrollView>
   );
 };
