@@ -29,7 +29,7 @@ const HomeScreen = () => {
         {/* Image */}
         <Image
           source={{
-            uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Headphones_icon.svg/472px-Headphones_icon.svg.png?20120312011037',
+            uri: 'https://cdn.pixabay.com/photo/2022/07/17/19/15/gym-7328168_1280.png',
           }}
           className="w-full h-64 "
         />

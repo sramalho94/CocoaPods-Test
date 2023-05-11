@@ -75,6 +75,12 @@ const Paywall = () => {
           </View>
         </View>
       </View>
+
+      {/* Monthly Subscribe */}
+
+      {/* Annual Subscribe */}
+
+      {/* Restore Purchase */}
     </ScrollView>
   );
 };
