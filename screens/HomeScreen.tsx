@@ -18,7 +18,9 @@ const HomeScreen = () => {
     <SafeAreaView>
       <ScrollView>
         {/* Pro or Upgrade Button */}
-        <TouchableOpacity className="absolute z-50 top-5 right-10 items-center">
+        <TouchableOpacity
+          className="absolute z-50 top-5 right-10 items-center"
+          onPress={() => navigation.navigate('Paywall')}>
           <Icon name="person-circle" size={30} color="#E5962D" />
           <Text className="text-center font-bold text-papa-orange">
             PRO/UPGRADE
