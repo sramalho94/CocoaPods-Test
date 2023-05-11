@@ -1,5 +1,6 @@
 import {View, Text, ScrollView, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
+import Icon2 from 'react-native-vector-icons/MaterialCommunityIcons';
 import React from 'react';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {RootStackParamList} from '../App';
@@ -23,16 +24,20 @@ const Paywall = () => {
           Upgrade to Pro to Access all the Features
         </Text>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity className="absolute top-0 right-0 p-5">
         <Icon
-          name="md-close-sharp"
+          name="md-close-circle-sharp"
           size={32}
           color="#E5962D"
           onPress={navigation.goBack}
         />
       </TouchableOpacity>
+      {/* Logo */}
+      <View className="items-center">
+        <Icon2 name="trophy-award" size={150} color="#E5962D" />
+      </View>
       {/* Content */}
-      <View>
+      <View className="space-y-5 px-10 py-5">
         <View className="flex-row space-x-10 items-center">
           <Icon name="md-key" size={32} color="#E5962D" />
           <View className="flex-1">
@@ -54,6 +59,18 @@ const Paywall = () => {
             <Text className="text-white text-sm font-extralight">
               Get unlimited access to our fitness support team and get help
               anytime you need it - day or night.
+            </Text>
+          </View>
+        </View>
+        <View className="flex-row space-x-10 items-center">
+          <Icon name="md-star" size={32} color="#E5962D" />
+          <View className="flex-1">
+            <Text className="text-white font-bold text-lg">
+              Unlock Limited Edition Content
+            </Text>
+            <Text className="text-white text-sm font-extralight">
+              Unlock exclusive content that you can't get anywhere else, like
+              special exclusive workouts and routines.
             </Text>
           </View>
         </View>
