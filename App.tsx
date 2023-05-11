@@ -4,7 +4,6 @@ import HomeScreen from './screens/HomeScreen';
 import DemoScreen from './screens/DemoScreen';
 import Paywall from './screens/Paywall';
 import React from 'react';
-
 export type RootStackParamList = {
   Home: undefined;
   Paywall: undefined;
@@ -12,7 +11,8 @@ export type RootStackParamList = {
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
-const App = () => {
+
+export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
@@ -34,6 +34,4 @@ const App = () => {
       </Stack.Navigator>
     </NavigationContainer>
   );
-};
-
-export default App;
+}
